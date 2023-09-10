@@ -18,6 +18,7 @@ const Market = () => {
   useEffect(() => {
     const Show_ownernft = async () => {
       try {
+        setloading(true)
         const nft_balance = await contract.totalSupply();
         // for(var i = 0;i<=nft_balance;i++)
         for (var i = 0; i <= nft_balance; i++) {
@@ -30,7 +31,9 @@ const Market = () => {
             setImg([...Img, imgurl1]);
             Img.push(imgurl1);
           }
+          setloading(false)
         }
+
       } catch (error) {
 
       }
