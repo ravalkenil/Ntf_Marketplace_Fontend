@@ -26,7 +26,7 @@ const Mynft_card = ({ Img, contract }) => {
   const Canclenft = async (event) => {
     event.preventDefault();
     const id = event.target.value
-    const cnft = await contract.Cancelsell(id)
+    const cnft = await contract.RemoveSell(id)
     const cwait = await cnft.wait()
   }
 
