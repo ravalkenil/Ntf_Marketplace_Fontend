@@ -41,6 +41,9 @@ const Shownft = (props) => {
             loading?(
                <Container style={{textAlign:"center" , marginTop:"60px"}}>
                 <CircularProgress style={{textAlign:"center" ,color:"white", marginTop:"230px" ,marginBottom:"230px"}} />
+                <div style={{ textAlign:"center",color: "red", marginBottom: "100px" }}>
+                  <h4>Please check that MetaMask is connected to an Polygon testnet network.</h4>
+                </div>
               </Container>
             ):(
             Img.slice(1, 8).map((item) => (

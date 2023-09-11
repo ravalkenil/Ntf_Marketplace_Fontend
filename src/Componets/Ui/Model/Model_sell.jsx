@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Model.css";
 import { Container } from "reactstrap";
+import { ethers } from "ethers";
 
 import { CircularProgress } from "@material-ui/core";
 
@@ -11,10 +12,11 @@ const Model_sell = ({ setShowModal, Id, contract }) => {
   // }
   const sellnft = async (e) => {
     try {
-
       setloading(true)
       e.preventDefault();
-      const price1 = price * 10000000000000000;
+      // const price1 = price * 10000000000000000;
+      const price1 =ethers.utils.parseUnits(`${price}`,"ether")
+      console.log(price1);
       const Tx = await contract.SellNFT(Id, price1)
       const waittx = await Tx.wait();
       setloading(false)

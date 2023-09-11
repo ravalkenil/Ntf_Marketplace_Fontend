@@ -9,8 +9,10 @@ const Nft_card = (props) => {
     const [Id, setId] = useState();
     const [showModal, setShowModal] = useState(false);
     const contract = props.contract
+    console.log("---",Number(nftprice));
     const nftprice1 = ethers.utils.formatEther(nftprice);
-    // const nftprice1 = nftprice
+    console.log(nftprice1);
+    // const nftprice1 = nftprice/10000000000000000
     const Handlesort = async (event) => {
         event.preventDefault();
 

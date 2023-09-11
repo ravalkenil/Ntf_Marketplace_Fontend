@@ -79,6 +79,7 @@ const Mynft_card = ({ Img, contract }) => {
                 <div>
                   <h6>Current Bid</h6>
                   <p>{Number(ethers.utils.formatEther(el.nftprice))} ETH</p>
+
                 </div>
                 <div>
                   <h6>Token id:</h6>

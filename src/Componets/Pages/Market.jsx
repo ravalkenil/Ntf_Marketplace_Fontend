@@ -41,40 +41,16 @@ const Market = () => {
     Show_ownernft()
   }, [])
 
+  console.log(Img);
+
   const handleItems = () => { };
 
   // ====== SORTING DATA BY HIGH, MID, LOW RATE =========
 
-  const handleSort = (e) => {
-    // const filterValue = e.target.value;
-    // if (filterValue === "Sort By") {
-    //   const filterData = NFT__DATA
+  const handleSort = () => {
+   
+    }
 
-    //   setData(filterData);
-    // } 
-
-    // if (filterValue === "high") {
-    //   const filterData = NFT__DATA.filter((item) => item.currentBid >= 6);
-
-    //   setData(filterData);
-    // }
-
-    // if (filterValue === "mid") {
-    //   const filterData = NFT__DATA.filter(
-    //     (item) => item.currentBid >= 5.5 && item.currentBid < 6
-    //   );
-
-    //   setData(filterData);
-    // }
-
-    // if (filterValue === "low") {
-    //   const filterData = NFT__DATA.filter(
-    //     (item) => item.currentBid >= 4.89 && item.currentBid < 5.5
-    //   );
-
-    //   setData(filterData);
-    // }
-  };
 
 
   return (
