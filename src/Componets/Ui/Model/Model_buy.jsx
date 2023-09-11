@@ -9,7 +9,7 @@ const Model_buy = ({ setShowModal, Id, contract }) => {
   const [loading, setloading] = useState(false)
   const shownftprice = async () => {
     const data1 = await contract.sellData(Id);
-    setprice(Number(data1.Price) / 1000000000000000000);
+    setprice(Number(data1.Price) / 10000000000000000);
     //  setprice(0)
   }
 
